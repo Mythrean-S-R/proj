@@ -1,6 +1,7 @@
 import streamlit as myth
 import pandas as pd 
 import time
+myth.write("hary is super gayyyyy")
 myth.write(":rainbow[hary is gayyyyyyyy]")
 if myth.button("Send balloons!"):
     myth.balloons()
