@@ -14,7 +14,7 @@ with myth.sidebar:
 if selected=="Home":
     myth.markdown(
     "<hr>"
-    
+    "<img src='assests_music/TEAM_XD.png' width='120'/>"
     "<h1 style='text-align: center; color: white;'>TEAM XD</h1>"
     "<h4 style='text-align: center;'>-We Build. We Code. We XD. 🚀</h4>""<hr>"
     "<h2>About Us</h2>"
