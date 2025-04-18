@@ -6,12 +6,7 @@ import time
 
 myth.markdown(
     "<hr><h1 style='text-align: center; color: teal;'>TEAM XD</h1><hr>",
-    """
-    <audio autoplay>
-        <source src="assests_music/RAINING IN ＮＡＧＯＹＡ (Lofi HipHop).mp3" type="audio/mpeg">
-    </audio>
-    """,
-    unsafe_allow_html=True
+unsafe_allow_html=True
 )
 
 myth.title("TEAM XD")
