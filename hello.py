@@ -1,8 +1,8 @@
 import streamlit as myth
 import pandas as pd 
 import time
-myth.write("hary is super gayyyyy")
-myth.write(":rainbow[hary is gayyyyyyyy]")
+myth.write("hary is super robot")
+myth.write(":rainbow[hary is the owner of SRM]")
 if myth.button("Send balloons!"):
     myth.balloons()
 myth.video(data="https://youtu.be/4in2X_BWUX0?si=P7oU5PQHMU7oGS6W")
@@ -36,7 +36,7 @@ def stream_data():
     for word in _LOREM_IPSUM.split(" "):
         yield word + " "
         time.sleep(0.02)
-        
+    
 
 if myth.button("Stream data"):
     myth.write_stream(stream_data)
