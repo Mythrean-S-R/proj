@@ -2,5 +2,5 @@ streamlit
 pandas
 numpy
 altair
-pygame
+#pygame
 streamlit_option_menu
