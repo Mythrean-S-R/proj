@@ -2,4 +2,4 @@ streamlit
 pandas
 numpy
 altair
-streamlit_option_menu
+streamlit-option-menu
