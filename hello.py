@@ -6,7 +6,7 @@ from streamlit_option_menu import option_menu
 mixer.init()
 
 
-mixer.music.load("proj\\assests_music\\RAINING IN ＮＡＧＯＹＡ (Lofi HipHop).mp3")
+mixer.music.load("assests_music\\RAINING IN ＮＡＧＯＹＡ (Lofi HipHop).mp3")
 mixer.music.play()
 
 import time
@@ -44,7 +44,7 @@ _LOREM_IPSUM = """
 DANZA KUDURO hello
 """
 if myth.button("another one"):
-    mixer.music.load("proj\\assests_music\\Danza-Kuduro.mp3")
+    mixer.music.load("assests_music\\Danza-Kuduro.mp3")
     mixer.music.play()
 
 def stream_data():
