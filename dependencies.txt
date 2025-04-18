@@ -4,3 +4,4 @@ numpy
 altair
 #pygame
 streamlit-option-menu
+option-menu
