@@ -38,7 +38,7 @@ def stream_data():
         time.sleep(0.02)
 
     if myth.button("play music"):
-        myth.audio(data="C:\Users\MYTHREAN\Downloads\Danza-Kuduro.mp3")
+        myth.audio(data=r"C:\Users\MYTHREAN\Downloads\Danza-Kuduro.mp3")
     
 
 if myth.button("Stream data"):
