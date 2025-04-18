@@ -1,5 +1,8 @@
 import streamlit as myth
 import pandas as pd 
+from pygame import mixer
+mixer.init()
+
 import time
 myth.write("hary is super robot")
 myth.write(":rainbow[hary is the owner of SRM]")
@@ -28,9 +31,9 @@ myth.write(c)
 if myth.button("pani poliyum neram idhu"):
     myth.snow()
 _LOREM_IPSUM = """
-DANZA KUDURO
+DANZA KUDURO hello
 """
-
+music=myth.file_uploader("C:\\Users\\MYTHREAN\Downloads\\Danza-Kuduro.mp3")
 
 def stream_data():
     for word in _LOREM_IPSUM.split(" "):
@@ -38,8 +41,8 @@ def stream_data():
         time.sleep(0.02)
 
     if myth.button("play music"):
-        myth.audio(data=r"C:\Users\MYTHREAN\Downloads\Danza-Kuduro.mp3")
-    
+        #myth.audio(src="C:\\Users\\MYTHREAN\Downloads\\Danza-Kuduro.mp3",format="audio/mp3")
+        mixer.music.play()
 
 if myth.button("Stream data"):
     myth.write_stream(stream_data)
