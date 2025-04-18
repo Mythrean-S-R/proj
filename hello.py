@@ -9,7 +9,11 @@ mixer.music.load("C:\\Users\\MYTHREAN\\Downloads\\RAINING IN ＮＡＧＯＹＡ 
 mixer.music.play()
 
 import time
-myth.write("hary is super robot")
+myth.markdown(
+    "<hr><h1 style='text-align: center; color: teal;'>TEAM XD</h1><hr>", 
+    unsafe_allow_html=True
+)
+myth.title("TEAM XD")
 myth.write(":rainbow[hary is the owner of SRM]")
 if myth.button("Send balloons!"):
     myth.balloons()
