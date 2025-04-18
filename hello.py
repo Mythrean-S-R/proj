@@ -36,6 +36,9 @@ def stream_data():
     for word in _LOREM_IPSUM.split(" "):
         yield word + " "
         time.sleep(0.02)
+
+    if myth.button("play music"):
+        myth.audio(data="C:\Users\MYTHREAN\Downloads\Danza-Kuduro.mp3")
     
 
 if myth.button("Stream data"):
