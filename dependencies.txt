@@ -3,4 +3,3 @@ pandas
 numpy
 altair
 #pygame
-streamlit_option_menu
