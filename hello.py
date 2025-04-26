@@ -1,7 +1,9 @@
+
 import streamlit as myth
 import pandas as pd
 import numpy as np
 import altair as alt
+import streamlit_option_menu
 from streamlit_option_menu import option_menu
 import time
 
@@ -13,7 +15,8 @@ with myth.sidebar:
     )
 if selected=="Home":
     myth.markdown(
-    "<hr>"
+    "<hr>",
+        myth.image("assests_music/TEAM_XD.png", width=120),
     "<img src='assests_music/TEAM_XD.png' width='120'/>"
     "<h1 style='text-align: center; color: white;'>TEAM XD</h1>"
     "<h4 style='text-align: center;'>-We Build. We Code. We XD. 🚀</h4>""<hr>"
