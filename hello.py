@@ -13,7 +13,36 @@ with myth.sidebar:
         options=["Home","Projects","About Us","Contact Us"]
 
     )
+page_bg_img = """
+    <style>
+    [data-testid="stAppViewContainer"]{
+
+        background-image: url('https://wallpapers.com/images/high/anime-cherry-blossom-background-725eirxtlpuf8tvi.webp');
+        
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    </style>
+    """
+myth.markdown(page_bg_img,
+    unsafe_allow_html=True
+)
+myth.markdown(
+    """
+    <div style="background-color: rgba(0, 0, 0, 0.7); padding: 20px; border-radius: 10px;">
+        <h1 style='text-align: center; color: white;'>TEAM XD</h1>
+        <h4 style='text-align: center; color: white;'>-We Build. We Code. We XD. 🚀</h4>
+        <hr>
+        <h2 style='color: white;'>About Us</h2>
+        <h4 style='color: white;'>We are TEAM XD — a group of passionate creators who build projects, solve problems, and grow together. From brainstorming to deployment, we do everything as one team. Collaboration is our superpower, and creativity is our fuel. 💡🚀</h4>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 if selected=="Home":
+    """<div style="background-color: rgba(0, 0, 0, 0.7); padding: 20px; border-radius: 10px;"></div>"""
     myth.markdown(
     "<hr>",unsafe_allow_html=True)
     myth.image("assests_music/TEAM_XD.png", width=120)
