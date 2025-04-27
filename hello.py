@@ -23,6 +23,12 @@ page_bg_img = """
         background-position: center;
         background-repeat: no-repeat;
         background-attachment: fixed;
+
+        .custom-text-bg {
+    background: rgba(0, 0, 0, 0.4); /* 40% black transparent */
+    padding: 15px;
+    border-radius: 10px;
+    backdrop-filter: blur(4px); /* optional frosted effect */
     }
     </style>
     """
@@ -45,7 +51,7 @@ if selected=="Home":
     #"""<div style="background-color: rgba(0, 0, 0, 0.7); padding: 20px; border-radius: 10px;"></div>"""
     myth.markdown(
     "<hr>",unsafe_allow_html=True)
-    myth.image("assests_music/TEAM_XD.png", width=120)
+    myth.image("assests_music/TEAM_XD.png", width=200)
     #myth.markdown(
     #"""
     #<div style="background-color: rgba(0, 0, 0, 0.7); padding: 20px; border-radius: 10px;">
