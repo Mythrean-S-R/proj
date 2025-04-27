@@ -13,25 +13,34 @@ with myth.sidebar:
         options=["Home","Projects","About Us","Contact Us"]
 
     )
-page_bg_img = """
-    <style>
-    [data-testid="stAppViewContainer"]{
+page_bg_img = page_bg_img = """
+<style>
+/* Set background image for full app */
+[data-testid="stAppViewContainer"] {
+    background-image: url('https://wallpapers.com/images/high/anime-cherry-blossom-background-725eirxtlpuf8tvi.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 
-        background-image: url('https://wallpapers.com/images/high/anime-cherry-blossom-background-725eirxtlpuf8tvi.webp');
-        
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-
-        .custom-text-bg {
-    background: rgba(0, 0, 0, 0.4); /* 40% black transparent */
-    padding: 15px;
+/* Apply dark transparent background and padding to main content */
+[data-testid="stAppViewContainer"] > div:first-child {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
     border-radius: 10px;
-    backdrop-filter: blur(4px); /* optional frosted effect */
-    }
-    </style>
-    """
+    margin: 20px;
+}
+
+/* Optional: style the sidebar background too if you want */
+[data-testid="stSidebar"] {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 10px;
+}
+</style>
+"""
+
 myth.markdown(page_bg_img,
     unsafe_allow_html=True
 )
